@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Becas TI | UANL - FIME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <div class="app-layout">
+        <nav class="sidebar">
+            <h2 class="sidebar-titulo"><i class="fas fa-graduation-cap"></i> Portal de Becas</h2>
+            <div class="nav-menu">
+                <button class="nav-btn activo" onclick="mostrarSeccion('inicio')"><i class="fas fa-home"></i> Inicio</button>
+                <button class="nav-btn" onclick="mostrarSeccion('uanl')"><i class="fas fa-university"></i> UANL y FIME</button>
+                <button class="nav-btn" onclick="mostrarSeccion('gobierno')"><i class="fas fa-landmark"></i> Gobierno</button>
+                <button class="nav-btn" onclick="mostrarSeccion('empresas')"><i class="fas fa-building"></i> Empresas</button>
+            </div>
+
+            <a href="https://dvdatogro-123.github.io/AF03-PIA/" class="btn-regresar" onclick="confirmarRegresoPIA(event)">
+                <i class="fas fa-arrow-left"></i> Regresar
+            </a>
+        </nav>
+
+        <main class="main-content">
+            <section id="inicio" class="seccion activa">
+                <div class="contenedor">
+                    <h1>Actividad Fundamental 7: Portafolio de Becas y Apoyos Académicos</h1>
+                    <p>En este portal se documenta el análisis de las principales becas universitarias, gubernamentales y de la iniciativa privada a las que puedo postularme como estudiante, contando con un promedio general de 8.9.</p>
+                </div>
+
+                <div class="contenedor">
+                    <h2>Categorías de Becas Disponibles</h2>
+                    <table id="tabla-becas" class="tabla-minimalista tabla-oculta">
+                        <thead>
+                            <tr>
+                                <th>Imagen Representativa</th>
+                                <th>Categoría de Beca</th>
+                                <th>Tipo de Apoyo Principal</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="fila-animada">
+                                <td>
+                                    <div class="logos-duo">
+                                        <img src="images/uanl_logo.png" alt="Logo UANL" class="img-mitad">
+                                        <img src="images/fime_logo.jpg" alt="Logo FIME" class="img-mitad">
+                                    </div>
+                                </td>
+                                <td><strong>Becas UANL y FIME</strong></td>
+                                <td>Exención de pago en cuota de Rectoría, cuota interna de FIME e intercambio académico</td>
+                                <td><button class="boton-accion" onclick="mostrarSeccion('uanl')"><i class="fas fa-search"></i> Ver Becas</button></td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td><img src="images/sep_logo.jpg" alt="Logo Becas Gobierno" class="img-empresa"></td>
+                                <td><strong>Becas de Gobierno</strong></td>
+                                <td>Manutención económica bimestral, capacitación técnica y apoyo al transporte en Nuevo León</td>
+                                <td><button class="boton-accion" onclick="mostrarSeccion('gobierno')"><i class="fas fa-search"></i> Ver Becas</button></td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td><img src="images/fms_logo.png" alt="Logo Becas Empresas" class="img-empresa"></td>
+                                <td><strong>Becas de Empresas Privadas</strong></td>
+                                <td>Estímulos económicos por excelencia en Ingeniería/STEM, laptops y certificaciones TI</td>
+                                <td><button class="boton-accion" onclick="mostrarSeccion('empresas')"><i class="fas fa-search"></i> Ver Becas</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="uanl" class="seccion">
+                <div class="contenedor hero-uanl">
+                    <h1>Becas Universitarias: UANL y FIME</h1>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Objetivo y cobertura de las becas institucionales</h3>
+                    <p>Las becas otorgadas directamente por la Universidad Autónoma de Nuevo León (a través del Departamento de Becas de Rectoría) y la Facultad de Ingeniería Mecánica y Eléctrica (Coordinación de Becas FIME) tienen como finalidad apoyar la permanencia escolar y premiar el rendimiento académico sobresaliente. Estas becas reducen desde un 50% hasta un 100% el costo de las boletas de inscripción semestrales, además de financiar estancias de movilidad nacional e internacional.</p>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Antecedentes y funcionamiento</h3>
+                    <p>El programa de becas de la UANL opera de forma semestral directamente desde la plataforma SIASE. Tanto el patronato universitario como la Fundación UANL y la administración de FIME destinan recursos para que ningún estudiante de ingeniería abandone sus estudios por motivos económicos y para que los alumnos con promedios competitivos reciban un incentivo directo en sus cuotas escolares.</p>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Por qué aplicaría</h3>
+                    <p>Contar con un promedio general de 8.9 me coloca en una posición ideal. Mientras que las becas de promedio exigen un mínimo de 85 sin materias reprobadas en primeras oportunidades, mi calificación supera el corte requerido y me permite competir también por becas de movilidad internacional de la Fundación UANL (que suelen pedir mínimo 85).</p>
+                    <p>Solicitar tanto la beca en cuota de Rectoría como la beca de cuota interna de FIME representa un ahorro semestral directo sumamente importante, permitiéndome destinar esos recursos a certificaciones técnicas de redes, cursos de desarrollo de software o equipamiento de cómputo.</p>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Tipos de Becas en UANL y FIME para mi perfil</h3>
+                    <table class="tabla-minimalista tabla-oculta">
+                        <thead>
+                            <tr>
+                                <th>Nombre de la Beca</th>
+                                <th>Requisitos Principales</th>
+                                <th>Beneficio Otorgado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="fila-animada">
+                                <td>Beca de Cuota de Rectoría por Promedio (SIASE)</td>
+                                <td>Promedio de 85 o superior en el semestre anterior, sin segundas oportunidades</td>
+                                <td>Exención del 100% del pago de la boleta de cuota escolar de Rectoría</td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td>Beca de Cuota Interna FIME (Promedio)</td>
+                                <td>Promedio de 85 o superior, llenado de estudio socioeconómico en SIASE</td>
+                                <td>Descuento parcial o total en la aportación de la facultad de Ingeniería</td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td>Beca por Colaboración / Ayudantía (FIME)</td>
+                                <td>Promedio superior a 85, dominio de la materia a impartir (ej. Arquitectura de Computadoras, Bases de Datos)</td>
+                                <td>Exención de cuotas y gran valor curricular (liberación de horas de servicio/créditos)</td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td>Beca de Movilidad e Intercambio (Fundación UANL)</td>
+                                <td>5.º semestre en adelante, promedio de 85, examen EXCI acreditado</td>
+                                <td>Apoyo económico de $2,500 a $5,000 USD para estancias de un semestre en el extranjero</td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td>Beca de Prácticas Profesionales y Servicio Social (UANL)</td>
+                                <td>Estar formalmente inscrito en el semestre de servicio social o prácticas, alumno regular</td>
+                                <td>Descuento en la boleta de inscripción durante el ciclo de prácticas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="https://www.uanl.mx/tramites/becas/" target="_blank" class="hipervinculo-oficial" onclick="confirmarSalida(event, 'Becas UANL')"><i class="fas fa-external-link-alt"></i> Consultar convocatorias oficiales en el portal de la UANL</a>
+                    </div>
+                </div>
+                
+                <div class="navegacion-seccion">
+                    <button class="boton-accion" onclick="mostrarSeccion('inicio')"><i class="fas fa-arrow-left"></i> Inicio</button>
+                    <button class="boton-accion" onclick="mostrarSeccion('gobierno')">Siguiente <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <section id="gobierno" class="seccion">
+                <div class="contenedor hero-gobierno">
+                    <h1>Becas Gubernamentales (Federal y Estatal)</h1>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Objetivo y cobertura de las becas públicas</h3>
+                    <p>Los programas de becas del Gobierno Federal (a través de la Coordinación Nacional de Becas para el Bienestar y la SEP) y del Gobierno del Estado de Nuevo León (Instituto Estatal de la Juventud y Secretaría de Educación) buscan impulsar a los estudiantes de universidades públicas mediante apoyos monetarios directos, subsidios en el transporte público y programas de capacitación tecnológica.</p>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Antecedentes y programas vigentes</h3>
+                    <p>En México, el Sistema Único de Beneficiarios de Educación Superior (SUBES) ha canalizado históricamente las becas de manutención, excelencia e iniciación a la investigación para alumnos de instituciones como la UANL. Adicionalmente, en Nuevo León existen apoyos locales focalizados en la movilidad urbana de los universitarios que se trasladan diariamente hacia Ciudad Universitaria en San Nicolás de los Garza.</p>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Por qué aplicaría</h3>
+                    <p>Al estar inscrito en una institución pública como la UANL y mantener un estatus de alumno regular con promedio de 8.9, cumplo con todos los criterios académicos tanto para las becas federales de educación superior como para las convocatorias de excelencia o servicio social e investigación (como el Verano de la Investigación Científica Delfín / CONAHCYT).</p>
+                    <p>Estos apoyos son ideales porque no solo se limitan a descontar colegiaturas, sino que depositan un recurso económico directo que ayuda a solventar gastos diarios de traslado a Ciudad Universitaria, materiales de estudio y proyectos de programación.</p>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Tipos de Becas de Gobierno disponibles</h3>
+                    <table class="tabla-minimalista tabla-oculta">
+                        <thead>
+                            <tr>
+                                <th>Nombre de la Beca / Programa</th>
+                                <th>Requisitos Principales</th>
+                                <th>Beneficio Otorgado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="fila-animada">
+                                <td>Beca Federal de Manutención (SUBES)</td>
+                                <td>Inscrito en la UANL, alumno regular, registro activo en el portal SUBES</td>
+                                <td>Apoyo económico directo depositado bimestralmente (aprox. $9,000 MXN anuales)</td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td>Apoyo de Transporte "Jóvenes Nuevo León" (INJUVE)</td>
+                                <td>Estudiante residente en NL, credencial UANL vigente, llenado de formato estatal</td>
+                                <td>Tarifa preferencial o saldo mensual gratuito en tarjeta Me Muevo / Urbani para Metro y camiones</td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td>Verano de la Investigación Científica (Programa Delfín)</td>
+                                <td>Cursar mínimo 4.º semestre, promedio superior a 8.5 en áreas de Tecnología e Ingeniería</td>
+                                <td>Estancia de investigación de 7 semanas con apoyo de viáticos (ideal para proyectos de TI)</td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td>Beca de Capacitación y Habilidades Digitales (Federal)</td>
+                                <td>Alumnos de licenciatura, registro en SUBES cuando se abren convocatorias extraordinarias</td>
+                                <td>Apoyo económico único y acceso a plataformas de certificación tecnológica</td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td>Beca para Iniciar la Titulación / Prácticas (SEP)</td>
+                                <td>Estar por iniciar o cursando las prácticas profesionales, promedio de 8.0 en adelante</td>
+                                <td>Estímulo económico para solventar gastos iniciales de inserción laboral</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="https://subes.becasbenitojuarez.gob.mx/" target="_blank" class="hipervinculo-oficial" onclick="confirmarSalida(event, 'Plataforma SUBES del Gobierno')"><i class="fas fa-external-link-alt"></i> Visitar el portal oficial de registro SUBES</a>
+                    </div>
+                </div>
+                
+                <div class="navegacion-seccion">
+                    <button class="boton-accion" onclick="mostrarSeccion('uanl')"><i class="fas fa-arrow-left"></i> Anterior</button>
+                    <button class="boton-accion" onclick="mostrarSeccion('empresas')">Siguiente <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <section id="empresas" class="seccion">
+                <div class="contenedor hero-empresas">
+                    <h1>Becas de Empresas y Fundaciones Privadas</h1>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Objetivo y cobertura en el sector privado</h3>
+                    <p>Grandes corporativos industriales, instituciones bancarias y fundaciones tecnológicas en México otorgan becas de excelencia para impulsar el talento en carreras STEM (Ciencia, Tecnología, Ingeniería y Matemáticas). A diferencia de otras becas, estas suelen incluir mentorías profesionales, cursos certificados en tecnologías emergentes, equipamiento de cómputo y vinculación directa con sus programas de prácticas profesionales.</p>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Presencia y vinculación con la UANL</h3>
+                    <p>En Nuevo León, empresas líderes como Telmex (a través de la Fundación Excelencia Fundación Telmex) y Banco Santander (Santander Open Academy) mantienen convenios activos con la UANL. Cada año premian a los estudiantes de ingeniería con los mejores promedios de sus facultades para formarlos como futuros líderes del sector tecnológico e industrial.</p>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Por qué aplicaría</h3>
+                    <p>Las becas de empresas privadas suelen tener filtros de promedio mucho más estrictos. Mi promedio de 8.9 me permite cumplir con el requisito de excelencia de la Beca Fundación José A. Martínez Sada (que premia a estudiantes destacados con promedio arriba de 8.5) y de las Becas Santander de Manutención y Tecnología.</p>
+                    <p>Obtener una beca corporativa no solo brinda un gran respaldo financiero, sino que aporta un enorme valor curricular al momento de aplicar a vacantes de TI, desarrollo backend o bases de datos dentro de estas mismas empresas en el ciclo 2027.</p>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Tipos de Becas Corporativas para Estudiantes de TI</h3>
+                    <table class="tabla-minimalista tabla-oculta">
+                        <thead>
+                            <tr>
+                                <th>Nombre de la Beca</th>
+                                <th>Requisitos Principales</th>
+                                <th>Beneficio Otorgado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="fila-animada">
+                                <td>Beca Fundación José A. Martínez Sada</td>
+                                <td>Estar inscrito formalmente en la UANL (FIME), promedio competitivo (superior a 85) y comprobación de necesidad de apoyo</td>
+                                <td>Apoyo económico depositado de forma mensual para solventar gastos de manutención, transporte y materiales escolares</td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td>Beca Santander Apoyo a la Manutención</td>
+                                <td>Historial académico regular, haber cursado el 30% de créditos, promedio superior a 8.0</td>
+                                <td>Apoyo de $9,000 MXN de libre uso depositado directamente al estudiante</td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td>Becas Santander Tech (Habilidades TI)</td>
+                                <td>Ser estudiante universitario en México, sin importar el promedio</td>
+                                <td>Cursos y certificaciones gratuitas con valor curricular (AWS, Inteligencia Artificial, Ciberseguridad)</td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td>Beca de Excelencia Fundación Telmex - Telcel</td>
+                                <td>Promedio de 9.0 (o 8.9 con perfil extracurrícular fuerte), cursar de 3.º a 7.º semestre</td>
+                                <td>Apoyo económico mensual, computadora gratuita con internet y congresos exclusivos</td>
+                            </tr>
+                            <tr class="fila-animada">
+                                <td>Becas de Certificación TI (Cisco / Fundación Carlos Slim)</td>
+                                <td>Tener conocimientos básicos en redes (CCNA 1), interés en telecomunicaciones</td>
+                                <td>Acceso a vales de descuento del 100% para presentar el examen oficial de certificación CCNA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="https://app.santanderopenacademy.com/es/program/search" target="_blank" class="hipervinculo-oficial" onclick="confirmarSalida(event, 'Santander Open Academy')"><i class="fas fa-external-link-alt"></i> Explorar convocatorias en Santander Open Academy</a>
+                    </div>
+                </div>
+                
+                <div class="navegacion-seccion">
+                    <button class="boton-accion" onclick="mostrarSeccion('gobierno')"><i class="fas fa-arrow-left"></i> Anterior</button>
+                    <button class="boton-accion" onclick="mostrarSeccion('inicio')">Inicio <i class="fas fa-home"></i></button>
+                </div>
+            </section>
+
+            <footer class="pie-pagina">
+                <p>Estudiante: Ian Karim Ávila González | Matrícula: 2117490 | Carrera: IAS | Programación Web | FIME - UANL | Promedio: 8.9 | Hora: N5 Grupo 002</p>
+            </footer>
+
+        </main>
+    </div>
+</body>
+</html>
